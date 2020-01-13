@@ -20,6 +20,7 @@ def analyze(request):
         if char not in punctution:
             analyzed=analyzed+char
       params={'purpose':'remove punctution','analyzed_text':analyzed}
+      yotext = analyzed
         #  analyze the text
       #return render(request, 'analyze.html',params)
   if(fullcaps=="on"):
